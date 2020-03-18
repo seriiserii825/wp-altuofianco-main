@@ -2076,6 +2076,7 @@ div#form_popup p.txt, input.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-req
 	width: 100%;
 }
 
+}
 div#form_popup input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
 	font-size: 15px;
 	color: #333 !important;
@@ -3213,7 +3214,7 @@ section#text-2 .textwidget a.button_f {
 
 .easy-hr-offers h2 {
 	margin-bottom: 30px;
-	/*font-family: 'Graphik', sans-serif;*/
+	font-family: 'Graphik', sans-serif;
 	font-size: 30px;
 }
 
@@ -3228,7 +3229,7 @@ section#text-2 .textwidget a.button_f {
 
 .easy-hr-offers li {
 	margin-bottom: 16px;
-	/*font-family: 'Graphik', sans-serif;*/
+	font-family: 'Graphik', sans-serif;
 }
 
 .easy-hr-advantages__wrap {
@@ -3240,20 +3241,22 @@ section#text-2 .textwidget a.button_f {
 
 .easy-hr-advantages__left {
 	padding-right: 30px;
+	font-family: 'Graphik', sans-serif;
 	color: #0779A3;
 }
 
 .easy-hr-advantages__left h3 {
+	font-family: 'Graphik', sans-serif;
 	font-size: 30px;
-	font-weight: bold;
 }
 
-.easy-hr-advantages__left h2 {
+.easy-hr-advantages__left h4 {
+	font-family: 'Graphik', sans-serif;
 	font-size: 24px;
-	font-weight: bold;
 }
 
 .easy-hr-advantages__left p {
+	font-family: 'Graphik', sans-serif !important;
 	color: #0779A3;
 }
 
@@ -3269,6 +3272,7 @@ section#text-2 .textwidget a.button_f {
 }
 
 .easy-hr-advantages__right h3 {
+	font-family: 'Graphik', sans-serif !important;
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -3276,6 +3280,7 @@ section#text-2 .textwidget a.button_f {
 }
 
 .easy-hr-advantages__right p {
+	font-family: 'Graphik', sans-serif !important;
 	font-size: 16px;
 	text-align: center;
 	color: #0779A3;
@@ -3432,21 +3437,14 @@ input:-ms-input-placeholder {
 	letter-spacing: -2px;
 	color: #0779A3;
 }
-css
 
-
-.easy-perizie-list ul {
-	list-style: none;
+.easy-perizie-list ol {
 	column-count: 2;
 	column-gap: 68px;
 }
 .easy-perizie-list li {
 	margin-bottom: 10px;
 }
-.easy-perizie-list li span {
-	font-weight: bold;
-}
-
 .easy-perizie-list strong {
 	color: #0779A3;
 }
