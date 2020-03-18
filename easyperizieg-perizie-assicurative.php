@@ -19,7 +19,7 @@
                             }
                             ?>
                          </span>
-                <h2><?php the_field('title_page'); ?></h2>
+                <h1><?php the_field('title_page'); ?></h1>
             </div>
 		<?php endif; ?>
     </div>
