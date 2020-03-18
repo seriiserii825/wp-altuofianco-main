@@ -2697,6 +2697,19 @@ body input[type=text].wpcf7-not-valid, body input[type=email].wpcf7-not-valid, b
 	border: 1px solid #ec3c06;
 }
 
+html{
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body
+{
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .post_sec1-text h5 {
 	color: #057da0;
 	font-size: 22px;
@@ -3232,6 +3245,7 @@ section#text-2 .textwidget a.button_f {
 
 .easy-hr-advantages__wrap {
 	position: relative;
+	margin: 0 auto;
 	padding: 90px 0 75px;
 	background: #f5f5f5;
 	z-index: 9;
@@ -3248,6 +3262,7 @@ section#text-2 .textwidget a.button_f {
 
 .easy-hr-advantages__left h2 {
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .easy-hr-advantages__left p {
@@ -3263,6 +3278,7 @@ section#text-2 .textwidget a.button_f {
 .easy-hr-advantages__right {
 	padding: 80px 50px;
 	background: #fff;
+	border: 1px solid #0779A3;
 }
 
 .easy-hr-advantages__right h3 {
@@ -3282,6 +3298,7 @@ section#text-2 .textwidget a.button_f {
 .easy-hr-advantages__right .your-phone {
 	display: block;
 	margin-bottom: 20px;
+	width: 100%;
 	height: 50px;
 }
 
@@ -3389,9 +3406,41 @@ input:-ms-input-placeholder {
 }
 
 .easy-perizie-intro {
+	position: relative;
 	margin-bottom: 115px;
 	padding-top: 90px;
 }
+
+.easy-perizie-intro img {
+	margin-bottom: 40px;
+	/*width: 454px;*/
+}
+
+.easy-perizie-intro .text-normal,
+.easy-perizie-intro .text-bold {
+	color: #FF0F0F;
+}
+
+.easy-perizie-intro .text-bold {
+	font-weight: 900;
+}
+
+.easy-perizie-intro p {
+	font-size: 26px;
+	line-height: 1.5;
+	color: #555;
+}
+
+/*.easy-perizie-intro::after {*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	top: -245px;*/
+/*	right: -90px;*/
+/*	width: 490px;*/
+/*	height: 700px;*/
+/*	background: url("../image/EasyPerizie-outsourcing-perizie-assicurative.png") no-repeat;*/
+/*	z-index: -1;*/
+/*}*/
 
 .easy-perizie-intro__img {
 	position: relative;
@@ -3405,23 +3454,27 @@ input:-ms-input-placeholder {
 .easy-perizie-intro__img figure {
 	position: absolute;
 	top: -340px;
-	right: 0;
-	width: 790px;
+	right: 160px;
+	width: 370px;
 	height: 700px;
 	z-index: -1;
 }
 
 .easy-perizie-intro__img img {
 	max-width: initial;
-	width: 100%;
+	width: 280%;
 }
 .easy-perizie-list {
 	margin-bottom: 100px;
 }
+
+.easy-perizie-semplice img {
+	margin-bottom: 60px;
+}
+
 .easy-perizie-semplice h3,
 .easy-perizie-list h3 {
 	margin-bottom: 30px;
-	font-family: Graphik;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 56px;
@@ -3430,39 +3483,50 @@ input:-ms-input-placeholder {
 	color: #0779A3;
 }
 
-.easy-perizie-list ol {
+.easy-perizie-list ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	column-count: 2;
 	column-gap: 68px;
 }
+
 .easy-perizie-list li {
 	margin-bottom: 10px;
 }
+
 .easy-perizie-list strong {
+	font-weight: bold;
 	color: #0779A3;
+}
+.easy-perizie-list .number {
+	font-weight: bold;
+	color: #444;
 }
 
 .easy-perizie-semplice {
 	padding-bottom: 120px;
 }
+
 .easy-perizie-semplice h3 {
 	text-align: center;
 }
+
 .easy-perizie-semplice p {
 	text-align: center;
 }
-.easy-perizie-semplice img {
-	width: 770px;
-}
+
 .easy-hr-advantages {
 	background: #f5f5f5;
 }
+
 @media screen and (max-width: 1300px) {
 	.easy-perizie-intro__img figure {
 		top: -234px;
 	}
+
 	.easy-perizie-intro__img img {
-		max-width: 100%;
-		width: 100%;
+		width: 200%;
 	}
 }
 
@@ -3473,13 +3537,16 @@ input:-ms-input-placeholder {
 		padding-bottom: 0;
 	}
 	.easy-perizie-intro__img figure {
-		position: relative;
-		top: 0;
-		left: 0;
 		width: auto;
-		height: auto;
+	}
+	.easy-perizie-intro__img {
+		display: none;
+	}
+	.easy-perizie-intro__text#text-block-3 {
+		margin-bottom: 60px;
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.easy-perizie-intro {
 		padding: 30px 15px 0;
@@ -3490,12 +3557,15 @@ input:-ms-input-placeholder {
 		max-width: 400px;
 	}
 
-	.easy-perizie-list ol {
+	.easy-perizie-list ul {
 		column-count: initial;
 	}
+
 	.easy-perizie-semplice h3, .easy-perizie-list h3 {
+		padding-left: 15px;
 		font-size: 32px;
 	}
+
 	.easy-perizie-intro__img .wpb_single_image {
 		text-align: right;
 	}
@@ -3510,6 +3580,10 @@ input:-ms-input-placeholder {
 
 	input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder {
 		font-size: 12px;
+	}
+
+	.easy-perizie-intro img {
+		width: auto;
 	}
 	.easy-hr-advantages__right .wpcf7-submit {
 		padding: 16px 9px;
